@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Brew Coffee House — Menu</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%236F4E37'%3E%3Cpath d='M4 2h4v4H4zm6 0h4v4h-4zm6 0h4v4h-4zM2 9h20v2c0 4-3 7-7.5 7.5V21H9v-2.5C4 18 2 15 2 11z'/%3E%3C/svg%3E" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --coffee: #6F4E37;
+    --cream: #F4EDE6;
+    --card: #ffffff;
+    --text: #241B16;
+    --muted: #6B5D4F;
+    --border: rgba(60,40,25,.1);
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 32px 16px 60px;
+  }
+  .wrap { width: 100%; max-width: 480px; }
+  .hero {
+    text-align: center;
+    padding: 32px 20px 28px;
+  }
+  .logo {
+    width: 64px; height: 64px; border-radius: 18px;
+    background: var(--coffee); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; margin: 0 auto 16px;
+  }
+  h1 { font-family: 'Poppins', sans-serif; font-size: 1.6rem; margin: 0 0 6px; }
+  .hero p { color: var(--muted); margin: 0; font-size: .95rem; }
+  .placeholder-img {
+    margin: 24px 0;
+    height: 160px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #D2B48C, #6F4E37);
+    display: flex; align-items: center; justify-content: center;
+    color: #fff; font-size: 2.2rem;
+  }
+  .card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 20px;
+    margin-bottom: 16px;
+  }
+  .card h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.05rem;
+    margin: 0 0 14px;
+  }
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: .95rem;
+  }
+  .menu-item:last-child { border-bottom: none; }
+  .menu-item span.name { font-weight: 600; }
+  .menu-item span.price { color: var(--coffee); font-weight: 700; }
+  .note {
+    text-align: center;
+    font-size: .8rem;
+    color: var(--muted);
+    margin-top: 24px;
+    line-height: 1.6;
+  }
+  .badge {
+    display: inline-block;
+    background: rgba(111,78,55,.1);
+    color: var(--coffee);
+    font-size: .72rem;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <div class="logo">☕</div>
+      <span class="badge">Scanned via QR Code</span>
+      <h1>Brew Coffee House</h1>
+      <p>Welcome to our Coffee Shop</p>
+    </div>
+
+    <div class="placeholder-img">🥐 ☕ 🍰</div>
+
+    <div class="card">
+      <h2>Today's Menu</h2>
+      <div class="menu-item"><span class="name">Coffee</span><span class="price">₱95</span></div>
+      <div class="menu-item"><span class="name">Iced Coffee</span><span class="price">₱120</span></div>
+      <div class="menu-item"><span class="name">Cappuccino</span><span class="price">₱135</span></div>
+      <div class="menu-item"><span class="name">Croissant</span><span class="price">₱95</span></div>
+      <div class="menu-item"><span class="name">Pastries</span><span class="price">₱85</span></div>
+    </div>
+
+    <p class="note">
+      This is a placeholder page for testing the QR code system.<br/>
+      Replace this page (or point <b>QR_DESTINATION_URL</b> in Settings to a different link)
+      once your real online menu, ordering page, or promo page is ready.
+    </p>
+  </div>
+</body>
+</html>
